@@ -1,0 +1,11 @@
+{
+  "name": "vintage-finds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vintage-finds.js",
+  "scripts": {
+    "start" : "nodemon ./vintage-finds.js localhost:3000"
+  },
+  "keywords": [],
+  "author": ""
+}
