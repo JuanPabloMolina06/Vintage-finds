@@ -143,6 +143,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 5px;
 }
 
 .produtos2{
@@ -150,4 +151,46 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 5px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+}
+
+.carousel-image {
+    max-width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }

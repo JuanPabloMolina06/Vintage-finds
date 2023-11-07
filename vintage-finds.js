@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 const port = 3000;
 
 //configurando o banco de dados
-mongoose.connect("mongodb://127.0.0.1:27017/haircare", {
+mongoose.connect("mongodb://127.0.0.1:27017/vintage", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -88,3 +88,24 @@ app.get("/", async (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
+
+var slideIndex = 0;
+showSlides(slideIndex);
+
+function moveSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("carousel-image");
+    if (n >= slides.length) {
+        slideIndex = 0
+    }
+    if (n < 0) {
+        slideIndex = slides.length - 1
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.transform = "translateX(" + (-slideIndex * 100) + "%)";
+    }
+}

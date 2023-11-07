@@ -14,6 +14,8 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="/cadastro_usuario.html">Cadastro</a></li>
+                <li><a href="/cadastro_produto.html">Cadastro produto</a></li>
             </ul>
         </nav>
     </header>
@@ -21,6 +23,17 @@
     <section id="inicio">
         <h1>Bem-vindo à Vintage finds</h1>
         <p>Encontre o produto já usado aqui</p>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="imagem1.jpg" alt="Item 1" class="carousel-image">
+                    <img src="imagem2.jpg" alt="Item 2" class="carousel-image">
+                    <img src="imagem3.jpg" alt="Item 3" class="carousel-image">
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+                <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        
     </section>
 
     <section id="sobre">
@@ -40,6 +53,14 @@
         <div class="produto">
             <h3>Produto 2</h3>
             <p>Descrição do produto 2.</p>
+        </div>
+        <div class="produto">
+            <h3>Produto 3</h3>
+            <p>Descrição do produto 3.</p>
+        </div>
+        <div class="produto">
+            <h3>Produto 4</h3>
+            <p>Descrição do produto 4.</p>
         </div>
         </div>
     </section>
